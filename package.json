@@ -1,0 +1,45 @@
+{
+  "name": "spotless-hungry-crocodile",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@craco/craco": "^7.1.0",
+    "@material-ui/core": "^4.12.4",
+    "@material-ui/icons": "^4.11.2",
+    "@mui/icons-material": "^7.1.2",
+    "axios": "^1.10.0",
+    "dangerous-html": "0.1.13",
+    "leaflet": "^1.9.4",
+    "next": "^12.1.10",
+    "prop-types": "15.7.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-helmet": "^6.1.0",
+    "react-leaflet": "^3.2.5",
+    "react-router-dom": "^5.2.0"
+  },
+  "scripts": {
+    "start": "craco start",
+    "build": "craco build",
+    "test": "craco test --env=jsdom",
+    "eject": "craco eject"
+  },
+  "engines": {
+    "node": ">=18.x"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "react-scripts": "^5.0.1"
+  }
+}
