@@ -9,14 +9,18 @@
 .about__heading {
   font-size: 3rem;
   text-transform: capitalize;
-  color: var(--header-color);
+  color: #8e24aa;
 }
 
 .about__div {
   width: 55rem;
   text-align: center;
-  padding: 4rem;
-  margin: 2rem;
+  padding: 2rem;
+  margin: 1rem;
+}
+
+.about__div h1 {
+  color: #8e24aa;
 }
 
 .about__div img {
@@ -24,7 +28,6 @@
 }
 
 .about__div h1 {
-  color: var(--primary-home-head);
   margin: 2.5rem;
   font-size: 3rem;
 }
@@ -87,7 +90,7 @@
   object-fit: cover;
   margin-bottom: 1rem;
   border: 4px solid #fff;
-  box-shadow: 0 0 0 4px #d64933;
+  box-shadow: 0 0 0 4px #e91e63;
 }
 
 .contributor__details {
@@ -112,7 +115,7 @@
 
 .contributor__details h1 {
   font-size: 1.25rem;
-  color: rgb(209, 57, 57);
+  color: #8e24aa;
   margin-bottom: 5px;
 }
 

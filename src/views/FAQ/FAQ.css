@@ -8,7 +8,7 @@
 }
 .faq__title {
   font-size: 3rem;
-  color: #f24638;
+  color: #333000;
   margin: 4rem 0rem;
   display: flex;
   justify-content: center;
@@ -31,7 +31,7 @@
 .faq__question h3 {
   font-size: 1.8rem;
   line-height: 3rem;
-  color: var(--primary-footer-text);
+  color: #e91e63;
 }
 
 .faq__answer {

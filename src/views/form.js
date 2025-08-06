@@ -4,7 +4,6 @@ import { Helmet } from 'react-helmet'
 
 import Navbar from '../components/navbar'
 import Form from '../components/form/Form'
-import Footer from '../components/footer'
 import './home.css'
 
 const Complaint = (props) => {
@@ -15,7 +14,6 @@ const Complaint = (props) => {
       </Helmet>
       <Navbar></Navbar>
       <Form></Form>
-      <Footer></Footer>
     </div>
   )
 }

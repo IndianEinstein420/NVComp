@@ -22,10 +22,7 @@ const Map = () => {
         if (result) {
           setPoliceStation({
             name: result.formatted,
-            location: [
-              result.geometry.lat,
-              result.geometry.lng,
-            ],
+            location: [result.geometry.lat, result.geometry.lng],
           });
         }
       },
@@ -36,14 +33,21 @@ const Map = () => {
   }, []);
 
   const markerIcon = new L.Icon({
-    iconUrl:
-      "https://unpkg.com/leaflet@1.7.1/dist/images/marker-icon.png",
+    iconUrl: "https://unpkg.com/leaflet@1.7.1/dist/images/marker-icon.png",
     iconSize: [25, 41],
     iconAnchor: [12, 41],
   });
 
   return (
     <div style={{ height: "500px", width: "100%" }}>
+      <p>
+        <h1>
+          Real-time Location Sharing: Instantly share your precise GPS
+          coordinates with trusted contacts for peace of mind
+        </h1>
+        <br />
+        <br />
+      </p>
       {userLocation && (
         <MapContainer
           center={userLocation}

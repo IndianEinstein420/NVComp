@@ -3,7 +3,7 @@ import "./form.css";
 function Form() {
   return (
     <div className="form-container">
-      <h1>Place Order</h1>
+      <h1>Report an Issue</h1><br  /> <br /> 
       <form
         action="http://localhost:8000/submit.php"
         method="POST"
