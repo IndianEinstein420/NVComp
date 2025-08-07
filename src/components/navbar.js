@@ -32,6 +32,9 @@ const Navbar = (props) => {
             <a href="./sos">
               <li className="thq-link thq-body-small">{props.link5}</li>
             </a>
+            <a href="./lib">
+              <li className="thq-link thq-body-small">{props.link6}</li>
+            </a>
           </ul>
           <div className="navbar-buttons1">
             <a
@@ -76,6 +79,9 @@ const Navbar = (props) => {
               <a href="./sos">
                 <li className="thq-link thq-body-small">{props.link5}</li>
               </a>
+              <a href="./lib">
+                <li className="thq-link thq-body-small">{props.link6}</li>
+              </a>
             </ul>
           </div>
           <div className="navbar-buttons2">
@@ -95,6 +101,7 @@ Navbar.defaultProps = {
   link3: "FAQs",
   link4: "Emergency",
   link5: "Sos",
+  link6: "Library",
   logoSrc: "./logo.png",
   logoAlt: "School Logo",
   action1: "/complaint",
@@ -106,6 +113,7 @@ Navbar.propTypes = {
   link3: PropTypes.string,
   link4: PropTypes.string,
   link5: PropTypes.string,
+  link6: PropTypes.string,
   logoSrc: PropTypes.string,
   logoAlt: PropTypes.string,
   action1: PropTypes.string,

@@ -9,10 +9,10 @@ import {
 
 import "./style.css";
 import Home from "./views/home";
-import NotFound1 from "./views/not-found";
 import Complaint from "./views/form";
 import About from "./views/About/About";
 import FAQ from "./views/FAQ/FAQ";
+import Library from "./views/Library/Library";
 import Map_ from "./views/Map_";
 import Sos from "./views/sos";
 
@@ -22,13 +22,11 @@ const App = () => {
       <Switch>
         <Route exact path="/" component={Home} />
         <Route exact path="/complaint" component={Complaint} />
-        <Route exact path="/not-found" component={NotFound1} />
         <Route exact path="/about" component={About} />
         <Route exact path="/faq" component={FAQ} />
         <Route exact path="/map" component={Map_} />
         <Route exact path="/sos" component={Sos} />
-
-        <Route component={NotFound1} />
+        <Route exact path="/lib" component={Library} />
       </Switch>
     </Router>
   );

@@ -1,0 +1,62 @@
+.Library__container {
+  background-color: var(--primary-body);
+  min-height: 100vh;
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  flex-direction: column;
+}
+
+.Library__Image {
+  width: 300px;
+  height: 200px;
+  justify-content: center;
+  align-items: center;
+}
+
+.Text__Container {
+  width: 700px;
+  height: 200px;
+  padding: 25px;
+  display: absolute;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.lib-img {
+  width: 200px;
+  height: 200px;
+}
+
+.Lib_Button {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  margin-top: 20px;
+  width: 100px;
+  height: 50px;
+  border-radius: 10px;
+  cursor: pointer;
+  color: #ffffff;
+}
+
+.Library__title {
+  font-size: 3rem;
+  color: rgb(167, 18, 167);
+  margin: 4rem 0rem;
+  display: flex;
+  justify-content: center;
+}
+
+.Article_Container {
+  display: flex;
+  border: #333000;
+  border-radius: 10px;
+  padding: 30px;
+  margin: 20px;
+}
+
+.Text__Container h2 {
+  color: rgb(236, 77, 103);
+}

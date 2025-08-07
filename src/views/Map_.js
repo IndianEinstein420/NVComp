@@ -16,6 +16,15 @@ const Map_ = (props) => {
       <div className="map-container">
         <Map></Map>
       </div>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <div>
+        <h3>Nearest Safety Location: Jalandhar Police Station No. 2</h3>
+      </div>
     </>
   );
 };
