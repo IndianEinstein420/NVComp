@@ -21,15 +21,12 @@
 
 .about__div h1 {
   color: #8e24aa;
+  margin: 2.5rem;
+  font-size: 3rem;
 }
 
 .about__div img {
   width: 75px;
-}
-
-.about__div h1 {
-  margin: 2.5rem;
-  font-size: 3rem;
 }
 
 .about__div p {
@@ -39,20 +36,46 @@
   letter-spacing: 2px;
 }
 
-/* Updated contributor grid: 2 per row only */
+/* Base contributors list */
 .contributors__list {
-  width: 100%;
-  margin: auto;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
   padding: 2rem 1rem;
   justify-items: center;
 }
 
-/* Responsive fallback: 1 founder per row */
+/* First row - 2 members */
+.contributors__list--two {
+  grid-template-columns: repeat(2, 400px); /* Fixed size for alignment */
+  justify-content: center; /* Center grid in container */
+  margin-bottom: 2rem;
+}
+
+/* Second row - 3 members */
+.contributors__list--three {
+  grid-template-columns: repeat(3, 400px);
+  justify-content: center; /* Center grid in container */
+}
+
+/* Responsive fallback: Adjust sizes */
+@media (max-width: 1400px) {
+  .contributors__list--two {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .contributors__list--three {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 1024px) {
+  .contributors__list--three {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 @media (max-width: 768px) {
-  .contributors__list {
+  .contributors__list--two,
+  .contributors__list--three {
     grid-template-columns: 1fr;
   }
 }
@@ -68,7 +91,7 @@
   object-fit: contain;
   box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.2);
   transition: transform 0.5s;
-  margin: 30px;
+  margin: 0;
 }
 
 .contributor:hover {
@@ -127,7 +150,6 @@
 }
 
 /* Media Queries */
-
 @media (max-width: 500px) {
   .about__container {
     padding: 5rem 0;
@@ -153,6 +175,7 @@
   }
   .contributor {
     height: fit-content;
+    width: 90%;
   }
   .contributor__details {
     padding: 5px;

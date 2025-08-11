@@ -10,19 +10,24 @@ const teamMembers = [
     image: "./founder1.jpg",
   },
   {
-    name: "Hardik Kapur",
-    role: "Lead Developer",
-    image: "./founder2.jpg",
-  },
-  {
     name: "Rupashi Kaura",
     role: "Vocalist",
     image: "./founder3.jpg",
   },
   {
-    name: "Arnav",
+    name: "Hardik Kapur",
+    role: "Lead Developer",
+    image: "./founder2.jpg",
+  },
+  {
+    name: "Harshnoor Kaur Sethi",
     role: "Student",
     image: "./founder4.jpg",
+  },
+  {
+    name: "Ishdeep Kaur",
+    role: "Student",
+    image: "./founder5.jpg",
   },
 ];
 
@@ -40,6 +45,7 @@ const About = () => {
             technology, policy, and community action to build real-world impact.
           </p>
         </div>
+
         <div className="about__div">
           <h1>Our Mission</h1>
           <p>
@@ -69,8 +75,27 @@ const About = () => {
         <br />
         <br />
         <h1 className="about__heading">Our Team</h1>
-        <div className="contributors__list">
-          {teamMembers.map((member, index) => (
+
+        {/* First row - 2 members */}
+        <div className="contributors__list contributors__list--two">
+          {teamMembers.slice(0, 2).map((member, index) => (
+            <div className="contributor" key={index}>
+              <div className="contributor__img">
+                <img src={member.image} alt={member.name} />
+              </div>
+              <div className="contributor__details">
+                <h1>{member.name}</h1>
+                <p>
+                  <strong>{member.role}</strong>
+                </p>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* Second row - 3 members */}
+        <div className="contributors__list contributors__list--three">
+          {teamMembers.slice(2).map((member, index) => (
             <div className="contributor" key={index}>
               <div className="contributor__img">
                 <img src={member.image} alt={member.name} />
